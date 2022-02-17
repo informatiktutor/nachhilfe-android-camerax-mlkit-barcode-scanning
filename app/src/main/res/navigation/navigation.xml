@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/barcodeResultFragment">
+
+    <fragment
+        android:id="@+id/barcodeScannerFragment"
+        android:name="de.informatiktutor.camerax_mlkit_barcode_scanning.BarcodeScannerFragment"
+        android:label="BarcodeScannerFragment" />
+    <action
+        android:id="@+id/action_global_barcodeScannerFragment"
+        app:destination="@id/barcodeScannerFragment" />
+
+    <fragment
+        android:id="@+id/barcodeResultFragment"
+        android:name="de.informatiktutor.camerax_mlkit_barcode_scanning.BarcodeResultFragment"
+        android:label="BarcodeScannerFragment" />
+    <action
+        android:id="@+id/action_global_barcodeResultFragment"
+        app:destination="@id/barcodeResultFragment" />
+
+</navigation>
